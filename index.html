@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica final JAVASCRIPT</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<!--Llama a la función "cargar" de nuestro fichero "index.js" que cargará la noticia de nuestro fichero "noticias.xml"-->
+<body onload="cargar()">
+    <!--Cabecera común a todas las páginas-->
+    <header id="inicio">     
+        <nav class="menu">
+            <div class="logo">
+                <a href="#">
+                        <img src="./assets/images/pc-componentes/logo-pccomponentes.jpg" alt="logo de PcComponentes">
+                </a>
+            </div>
+            <!--Creamos el menú de navegación-->
+            <div class="lista-header">
+                <ul>
+                    <li><a href="index.html#inicio" class="color-principal">Inicio</a></li>
+                    <li><a href="./views/contacto.html">Contacto</a></li>
+                    <li><a href="./views/galeria.html">Galeria</a></li>
+                    <li><a href="index.html#section-4">Sorteo</a></li> <!--Enlace creado en la propia página, que hace referencia a las sección 4, al final de la página-->
+                    <li><a href="./views/presupuesto.html">Presupuesto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Creanmos el div con la Bienvenida a nuestra página web-->
+        <div class="img-header">
+            <div class="descripcion-header">
+                <h1>Bienvenidos a PcComponentes</h1>
+                <p>Tienda online numero 1 en España</p>
+                <button> Ver Abajo</button>
+            </div>
+        </div>
+        <!--Bisel para dividir las diferentes secciones-->
+        <div class="bisel-inferior"></div>
+    </header>
+
+    <main>
+        <!--Sección 1 en la que explicamos un poco acerca de nuestra empresa-->
+        <section class="section-1" id="section-1">
+            <div class="div-section-1">
+                <h2>Acerca de nosotros</h2>
+
+                <!--Aquí exportamos la noticia de nuestro fichero "noticias.xml"-->
+                <p id="noticiaxml"> Aquí va la noticia XML</p> <br>
+           
+                <div class="div-section-1-galeria">
+                    <img src="./assets/images/nosotros/nosotros_1.png" alt="Nuestros técnicos montando un pc sobremesa">
+                    <img src="./assets/images/nosotros/nosotros_2.png" alt="Nuestros técnicos detectando problemas de software">
+                    <img src="./assets/images/nosotros/nosotros_3.png" alt="Entrada de una de nuestras oficinas en murcia">
+                </div>
+                    <button class="section-1-boton"> Ver más </button>
+            </div>
+        </section>
+
+        <!--Sección 2 donde mostramos las imagenes de los productos que ofrecemos -->
+
+        <section class="section-2" id="section-2">
+            <div class="bisel-superior"></div>
+            <div class="section-2-degradado"></div>
+            <div class="ejez">
+                <div class="div-section-2">
+                    <div class="div-section-2-titulo">
+                        <h2>Nuestros productos</h2>
+                        <hr> <!--Crea una linea-->
+                    </div>
+                    <!--Imagenes de nuestros productos-->
+                    <div class="div-section-2-galeria">
+                        <img src="./assets/images/productos/pc_sobremesa.png" alt="oferta de nuestros ordenadores sobremesa">
+                        <img src="./assets/images/productos/portatiles.png" alt="oferta de nuestros portátiles"> 
+                        <img src="./assets/images/productos/smartphones.png" alt="oferta de nuestros smartphones"> 
+                        <img src="./assets/images/productos/monitores.png" alt="oferta de nuestros monitores"> 
+                        <img src="./assets/images/productos/auriculares.png" alt="oferta de nuestros auriculares"> 
+                    </div>
+                    <div class="bisel-inferior"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion 3 donde van nuestros profesionales-->
+        <section class="section-3" id="section-3">
+            <div class="section-3-title">
+                <h2>Nuestros profesionales</h2>
+                <hr>
+            </div>
+            <div class="section-3-pregunta">
+                <h3> ¿Por qué deberia confiar en nosotros?</h3>
+
+                <p> Siempre podrás contar con ayuda experta, en caso de que tengas cualquier duda. Nuestros especialistas analizan constantemente el mercado tecnológico, para ofrecerte los productos y servicios que garanticen la satisfacción de tus expectativas de calidad y funcionalidad.</p>
+            </div>
+
+            <div class="div-section-3">
+
+                <!--Creamos varios div para los diferentes profesionales, con su respectiva imagen, titulo y experiencia-->
+                <div class="section-3-profesionales">
+                    <div class="section-3-image">
+                        <img src="./assets/images/profesionales/profesional_1.png" alt="">
+                    </div>
+                    <div class="section-3-text">
+                        <h3>Miguel Angel López Hernández</h3>
+                        <p> coFounder y divulgador de contenido sobre RRHH - PcComponentes<br>
+                            Ilustre Colegio de Abogados de Albacete - Profesional independiente <br>
+                            Director de RRHH, Relaciones Laborales - Foodiverse <br>
+                            Director de RRHH y Relaciones Laborales -Damm
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-3-profesionales">
+                    <div class="section-3-image">
+                        <img src="./assets/images/profesionales/profesional_2.png" alt="">
+                    </div>
+                    <div class="section-3-text">
+                        <h3>José Sierra Bohajar</h3>
+                        <p>IT & Digital HRBP - PcComponentes<br>
+                            HR & IT Recruiter - Inforges <br>
+                            IT RecruiterIT Recruiter - Logicalis Spain <br>
+                            IT RecruiterIT Recruiter - Randstad España</p>
+                    </div>
+                </div>
+
+                <div class="section-3-profesionales">
+                    <div class="section-3-image">
+                        <img src="./assets/images/profesionales/profesional_3.png" alt="">
+                    </div>
+                    <div class="section-3-text">
+                        <h3>Javier Martinez</h3>
+                        <p>HR Business PartnerHR Business Partner - PcComponentes<br>
+                            Responsable de recursos humanosResponsable de recursos humanos - BDBA<br>
+                            Técnico de selecciónTécnico de selección - Adecco España<br>
+                            Técnico junior de operacionesTécnico junior de operaciones - Avon
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section-3-profesionales">
+                    <div class="section-3-image">
+                        <img src="./assets/images/profesionales/profesional_4.png" alt="">
+                    </div>
+                    <div class="section-3-text"> 
+                        <h3>Mario Alcaraz Illán</h3>
+                        <p> HRBP // Training & People Development - PcComponentes<br>
+                            Graduado SocialGraduado Social - Tezconsa, S.L<br>
+                            Técnico Superior en Administración de Sistemas Informáticos - MetaEnlace SI</p>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <!--Sección 4 que hace referencia al boton "sorteo" del menú de navegación-->
+        <section class="section-4" id="section-4">
+            <div class="bisel-superior"></div>
+            <div class="section-4-degradado"></div>
+            <div class="ejez">
+                <div class="div-section-4">
+                    <div class="section-4-title">
+                        <h2>Formulario Sorteo</h2>
+                        <hr>
+                    </div>
+
+                    <!--Formulario simple para entrar en el sorteo de nuestra página-->
+                    <div class="section-4-formulario">
+                        <form id="formulario">
+                            <label for="nombre">Nombre: </label>
+                            <br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre">
+                            <br>
+
+                            <label for="apellidos">Apellidos: </label>
+                            <br>
+                            <input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus apellidos">
+                            <br>
+
+                            <label for="correo">Correo electrónico</label>
+                            <br>
+                            <input type="text" id="correo" name="correo" placeholder="Escriba su correo electrónico">
+                            <br>
+
+                            <label for="mensaje">Escriba el motivo por el cual desea ganar el sorteo</label>
+                            <br>
+                            <textarea id="mensaje" name="mensaje"></textarea>
+                            <br>
+
+                            <label for="privacidad">He leído y acepto las bases del sorteo, condiciones generales, la política de privacidad de PcComponentes y acepto recibir comunicaciones comerciales de PcComponentes y/o de terceros con los que colaboramos. </label>
+                            <input type="checkbox" id="privacidad" name="privacidad">
+                            <br>
+
+                            <input type="submit" value="Enviar" id="enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--En este footer tenemos enlaces a las diferentes redes sociales de nuestra empresa, asi como la dirección, y todos los derechos reservados-->
+    <footer>
+		<div  id="div_footer" class="footer" style="text-align: center;">
+
+			<div id="redes">
+				<a href="https://www.instagram.com/pccomponentes/" title="página oficial de PcComponentes en Instagram">
+                    <img class="redes" src="./assets/images/redes-sociales/instagram_icono.png" alt="Red social Instagram"></a>
+                    
+                <a href="https://www.facebook.com/pccomponentes" title="página oficial de PcComponentes en Facebook">
+                    <img class="redes" src="./assets/images/redes-sociales/facebook_icono.png" alt="Red social Facebook"></a>
+
+                <a href="https://www.youtube.com/user/PcComponentescom" title="página oficial de PcComponentes en Youtube">
+                    <img class="redes" src="./assets/images/redes-sociales/youtube_icono.png" alt="Red social Youtube"></a>
+
+                <a href="https://twitter.com/pccomponentes" title="página oficial de PcComponentes en Twitter">
+                    <img class="redes" src="./assets/images/redes-sociales/twitter_icono.png" alt="Red social Twitter"></a>
+
+                <a href="https://t.me/pccomponentesESP" title="página oficial de PcComponentes en Telegram">
+                    <img class="redes" src="./assets/images/redes-sociales/telegram_icono.png" alt="Red social Telegram"></a>
+
+                <a href="https://www.tiktok.com/@pccomponentes.com" title="página oficial de PcComponentes en Tiktok">
+                    <img class="redes" src="./assets/images/redes-sociales/tiktok_icono.png" alt="Red social Tiktok"></a>
+
+				<br>
+				
+				<p> ---------------------------------------------------------------------------------------------------------------------------------<br>
+                    Polígono Industrial Las Salinas, Avenida Europa, 2-3, 30840, Murcia </p>
+
+				<p>---------------------------------------------------------------------------------------------------------------------------------<br>
+                    ©PC Componentes y Multimedia SLU CIF B73347494. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en España y otros países. Todos los precios incluyen IVA. </p>
+			</div>
+		</div>
+    </footer>
+
+    <!--Llamamos al script que nos cargará nuestra noticia en "Acerca de nosotros" desde nuestro fichero "noticias.xml", donde almacenamos todas las noticias-->
+    <script src="./js/index.js"></script>
+</body>
+</html>

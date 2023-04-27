@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Edit_Mensaje SYSTEM "Edit_Mensaje.dtd">
+
+<noticias>
+
+    <noticia>
+        <texto> Llevamos más de 17 años a tu lado, construyendo y adaptándonos a lo que necesitas a medida que hemos ido avanzando. No obstante, no es tanto todo lo que hemos hecho sino nuestra manera de hacerlo. Por ello, queremos que tengas claro que puedes esperar de nosotros y en qué centramos nuestros esfuerzos día a día. Para que sepas que puedes esperar de PcComponentes si decides formar parte de esta familia. </texto>
+    </noticia>
+
+    <noticia>
+        <texto> As we announced at the end of 2022, the LEC’s game days will be changing for 2023. There will be three days of games every week on Saturdays, Sundays, and Mondays - with Split Finals always taking place on Sundays. </texto>
+    </noticia>
+
+    <noticia>
+        <texto> Each split will last six weeks, with the LEC Season Finals taking place in August and September. Our three splits will be played with a live audience from our LEC Studio in Berlin, and the 2023 season will culminate with our Season Finals Roadshow. Further information about the specific start dates for the Spring and Summer Splits and our Season Finals will be released later in the year. </texto>
+    </noticia>
+
+    <noticia>
+        <texto> Side selection is a crucial part of the competitive integrity of our league, so we wanted to ensure we weren’t giving any unfair advantages to teams following the changes to our season. For all regular season games in 2023, side selection will be randomly assigned by the League prior to the start of each split – and each team will have a minimum of four games on each side.</texto>
+    </noticia>
+
+    <noticia>
+        <texto> If the teams have an identical amount of games won against each other, then the tiebreaker will rely on a statistic called Strength of Victory (SoV) score. A full explanation of how we calculate SoV can be found in the LEC’s official rulebook . Teams with a higher SoV score will be granted the higher seeds. Information about further tiebreaker protocols if all these options have been exhausted can also be found in the rulebook. </texto>
+    </noticia>
+
+    <noticia>
+        <texto> Now that we’re running three regular splits in a year rather than two, we’re going to be making some changes to how Championship points are distributed. Winter and Spring placements will award the same amount of Championship points, while Summer will offer slightly more – the complete point breakdown is as follows.</texto>
+    </noticia>
+</noticias>

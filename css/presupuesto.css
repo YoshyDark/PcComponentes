@@ -1,0 +1,244 @@
+/*NUESTRAS VARIABLES*/
+:root{
+    --naranja: rgb(255, 137, 1);
+    --naranjaoscuro: rgb(185, 133, 34);
+    --negro: #252a34;
+    --naranjalight: rgb(247, 191, 89);
+    --naranjalight2: rgb(255, 222, 160);
+    --blanco: #eaeaea;
+    --titulo: 35px;
+    --texto: 19px;
+    --rojo: rgb(173, 0, 0);
+    --rojooscuro: rgb(104, 0, 0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;                                                                /*Movimientos entre los diferentes puntos sean mas suaves*/
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+/***********************************************************/
+
+/**HEADER**/
+
+#inicio{
+    position: relative;
+    width: 100%;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999;                                             /*Para que no se mueva el menú de navegación desde arriba del todo*/
+}
+
+.menu .logo{
+    margin-left: 20px;
+}
+
+.menu .logo a img{
+    width: 255px;
+    height: 100%;
+    padding-left: 70px;
+}
+
+.menu .lista-header{
+    margin-right: 20px;
+}
+
+.menu .lista-header ul{
+    display: flex;
+}
+
+.menu .lista-header ul li{
+    list-style: none;
+}
+
+.menu .lista-header ul li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px;
+    color: var(--negro);
+    font-size: 16px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.menu .lista-header ul li a:hover{
+    background-color: var(--naranja);
+    color: #fff;
+}
+
+.menu .lista-header ul li a.color-principal{
+    background-color: var(--naranja);
+    color: #fff;
+}
+
+/*****************MAIN*******************/
+
+#div-formulario{
+    padding-top: 100px;
+    width: 800px;
+    margin-left: 600px;
+    margin-right: 600px;
+
+}
+
+fieldset{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+legend{
+    color: #ff7e14;
+    font-weight: 700;
+}
+
+label{
+    color: #ff7e14;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+div{
+    margin-bottom: 30px;
+}
+
+html{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div{
+    margin-top: 0.5rem;
+}
+
+input{
+    border: 2px solid #555;
+    padding: 0.2rem;
+    background-color: var(--naranjalight2);
+    margin-left: 30px;
+}
+
+p{
+    margin-left: 30px;
+    color: var(--rojo);
+    font-weight: 700;
+}
+
+select{
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+#error_privacidad{
+    margin-left: 30px;
+}
+
+#botones_final{
+    text-align: center;
+    margin-top: -25px;
+}
+
+.privacidad{
+    margin-top: 35px;
+}
+
+.botones_final{
+        text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+        text-align:center;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        display:inline-block;
+        color: #FFF;
+        background: var(--naranja); 
+        padding: 6px 30px;
+        white-space: nowrap;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        margin: 10px 5px;
+        -webkit-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+}
+
+.naranja{
+	background: var(--naranja);
+	border: 1px solid #ff7e14; 
+}
+
+.naranja:hover{
+ 	background: var(--naranjalight);
+	cursor: pointer;
+}
+
+/*ESTILOS PARA LOS MENSAJES DE ERRORES*/
+
+    /*Mensaje*/
+small{
+    background-color: #e74d3c;
+    border-radius: .5rem;
+    padding: .5rem;
+    color: #fff;
+    bottom: 0px;
+    left: 0px;
+    visibility: hidden;
+}
+
+    /*Cuando va todo bien*/
+.formulario-colores.success input{
+    border-color: #2ecc71;
+}
+
+    /*cuando hay errores*/
+.formulario-colores.error input{
+    border-color: #e74d3c;
+}
+    /*Mostrar mensaje cuando hay error*/
+.formulario-colores.error small{
+    visibility: visible;
+}
+
+
+
+/***************FOOTER***********************************************/
+
+footer .footer{
+    padding-top: 10px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0,0,0,0.8);
+    border-top: 2px solid var(--naranja);
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}

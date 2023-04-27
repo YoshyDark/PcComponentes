@@ -1,0 +1,49 @@
+ORDENADORES GAMING
+
+pc_1: PcCom Gold Élite Intel Core i5-11400F/16GB/500GBSSD/RTX3060
+pc_2: PcCom Bronze AMD Ryzen 5 5600G/16GB/500GB SSD
+pc_3: HP OMEN 40L GT21-0032ns AMD Ryzen 7 5800X/16GB/1TB SSD/RTX 3070Ti
+pc_4: PcVIP Effect AMD Ryzen 5 5600G/16GB/1TB+500GB SSD
+pc_5: Epical-Q Tracker4 Whitehawk Intel Core i5-11400F/32GB/1TB+500GB SSD/RTX 3060
+
+********************************************************************************************************
+
+PORTÁTILES
+
+portatil_1: HP 15S-fq2159ns Intel Core i3-1115G4/8GB/256GB SSD/15.6"
+portatil_2: HP Victus 16-e1015ns AMD Ryzen 7 6800H/16GB/512GB SSD/RTX 3050/16.1"
+portatil_3: Lenovo IdeaPad 3 15ITL6 Intel Core i7-1165G7/16 GB/512GB SSD/15.6"
+portatil_4: ASUS VivoBook 15 F515JA-EJ2882W Intel Core i7-1065G7/8GB/512GB SSD/15.6"
+portatil_5: Acer Predator Helios 300 PH315-55-79BN Intel Core i7-12700H/32GB/1TB SSD/RTX3070/15.6"
+
+********************************************************************************************************
+
+SMARTPHONES
+
+smartphone_1: Apple iPhone 14 Pro Max 256GB Morado Oscuro Libre
+smartphone_2: Apple iPhone 13 256GB Rosa Libre
+smartphone_3: Xiaomi Redmi A1 2/32GB Negro Libre + Cable USB-C a Jack
+smartphone_4: Samsung Galaxy S23 256GB Algodón Libre + Cargador 25W
+smartphone_5: Samsung Galaxy M23 5G 4/128GB Verde Libre
+
+********************************************************************************************************
+
+MONITORES
+
+monitor_1: AOC 24B2XDAM 23.8" LED FullHD
+monitor_2: HP X27 2'' LED IPS FullHD 165Hz FreeSync Premium
+monitor_3: Newskill Icarus IC27Q4-V2P 27" LED QHD 144Hz G-Sync Compatible Curva
+monitor_4: HP X24c 23.6'' LED FullHD 144Hz FreeSync Curvo
+monitor_5: LG Ultragear 24GQ50F-B 24'' LED FullHD 165Hz FreeSync Premium
+
+********************************************************************************************************
+
+AURICULARES
+
+cascos_1: Scorpion MA-HG9015 Auriculares Gaming 7.1 Verdes
+cascos_2: Vertux Miami Auriculares Gaming 7.1 RGB Verde
+cascos_3: Abysm Gaming AG700 Pro 7.1 Auriculares Gaming Blanco/Azul
+cascos_4: Klack Inkpod Auriculares Inalámbricos Azul Cielo
+cascos_5: Hori Auriculares Gaming Pro para Nintendo Switch
+
+

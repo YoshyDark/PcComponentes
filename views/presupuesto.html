@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Validar formulario</title>
+    <!--Css de la página presupuesto-->
+    <link rel="stylesheet" href="../css/presupuesto.css">
+
+</head>
+
+
+<body>
+
+    <header id="inicio">
+        <nav class="menu">
+            <div class="logo">
+                <a href="#">
+                        <img src="../assets/images/pc-componentes/logo-pccomponentes.jpg" alt="logo de PcComponentes">
+                </a>
+            </div>
+
+            <div class="lista-header">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../views/contacto.html">Contacto</a></li>
+                    <li><a href="../views/galeria.html">Galeria</a></li>
+                    <li><a href="../index.html#section-4">Sorteo</a></li>
+                    <li><a href="#" class="color-principal">Presupuesto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    
+    <div id="div-formulario">
+        <form id="formulario" name="formulario" method="get" action="presupuesto.php">
+
+        <div id="contenedor">
+            <fieldset class="formulario-colores">
+                <legend> Datos de contacto </legend>
+                <div>
+                    <label for="nombre"> Nombre: </label> <br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre">
+                    <small>Mensaje de error</small>
+                </div>
+                <div>
+                    <label for="apellidos"> Apellidos: </label> <br>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus apellidos">
+                    <small>Mensaje de error</small>
+                </div>
+                <div>
+                    <label for="direccion"> Dirección: </label> <br>
+                    <input type="text" id="direccion" name="direccion" placeholder="Escriba su direccion">
+                    <small>Mensaje de error</small>
+                </div>
+                <div>
+                    <label for="telefono"> Teléfono de contacto: </label> <br>
+                    <input type="text" id="telefono" name="telefono" placeholder="Escriba su telefono">
+                    <small>Mensaje de error</small>
+                </div>
+                <div>
+                    <label for="edad"> Edad: </label> <br>
+                    <input type="text" id="edad" name="edad" placeholder="Escriba su edad">
+                    <small>Mensaje de error</small>
+                </div>
+                <div>
+                    <label for="correo"> Correo electrónico: </label> <br>
+                    <input type="text" id="correo" name="correo" placeholder="Escriba su correo">
+                    <small>Mensaje de error</small>
+                </div>   
+                
+            </fieldset>
+
+            <fieldset class="formulario-colores">
+                <legend>Productos</legend>
+                <div class="productos">
+                    <p> <u> Elija una categoría </u></p>
+                    <br>
+                    <div>
+                            <div id="div_productos">
+                                <select id="select1" onChange="cargarSelect2(this.value);">
+                                    <option value='0'>Selecciona una categoría</option>
+                                    <option value='1'>Pc sobremesa</option>
+                                    <option value='2'>Portátiles</option>
+                                    <option value='3'>Smartphones</option>
+                                    <option value='4'>Monitores</option>
+                                    <option value='5'>Auriculares</option>
+                                </select>
+                                <br>
+                                <br>
+                                <p> <u>Elija un producto</u></p>
+                                <br>
+                                <select id="select2" disabled>
+                                    <option value='0'>Desactivado</option>
+                                </select>
+                            </div>
+                            
+                            <div id="div_plazos">
+                                <label for="plazos">Elija en cuantos plazos desea pagar el producto (meses):</label>
+                                <input type="number" id="plazos" name="plazos" min="1" max="12" value="0">
+                            </div>
+
+                            <div id="div_extras">
+
+                                <p> Extras del producto: </p> 
+                                <br>
+                                <div>
+                                    <label for="extra_1">Seguro del producto</label>
+                                    <input type="checkbox" id="extra_1" name="extra_1" value="1" data-precio="50">
+                                </div>
+                                <div>
+                                    <label for="extra_2">Producto personalizado</label>
+                                    <input type="checkbox" id="extra_2" name="extra_2" value="2" data-precio="100">
+                                </div>
+                                <div>
+                                    <label for="extra_3">Envio Express (24 horas)</label>
+                                    <input type="checkbox" id="extra_3" name="extra_3" value="3" data-precio="150">
+                                </div>
+                                <div>
+                                    <label for="extra_4">Garantía extendida del producto (3 años)</label>
+                                    <input type="checkbox" id="extra_4" name="extra_4" value="4" checked data-precio="200">
+                                </div>  
+                            </div>
+
+                            <div>
+                                <label for="presupuesto_final">Presupuesto final: </label>
+                                <input type="text" id="presupuesto_final" placeholder="0$">
+                            </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="formulario-colores">
+                <legend>Condiciones privacidad y envio de productos</legend>
+                <div  class="privacidad">
+                    <label for="privacidad">He leido la política de uso y privacidad</label>
+                    <input type="checkbox" id="privacidad" name="privacidad_1">
+                    <br><br>
+                    <small id="error_privacidad">Mensaje de error</small>
+                </div>
+                <div id="botones_final">
+                    <input type="submit" id="enviar" class="botones_final naranja" value="Enviar">
+                    <input type="reset" id="borrar" class="botones_final naranja" value="Borrar">
+                </div>
+            </fieldset>
+        </div>
+        </form>
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+
+        <p>©PC Componentes y Multimedia SLU CIF B73347494. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en España y otros países. <br>
+        Todos los precios incluyen IVA. <br>
+        ----------------------------------------------------------------------------------------------------------------------------------------------------<br>
+        Polígono Industrial Las Salinas, Avenida Europa, 2-3, 30840, Murcia <br>
+        ----------------------------------------------------------------------------------------------------------------------------------------------------<br>
+        REDES SOCIALES</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!--Javascript de la lista de productos-->
+    <script src="../js/cargadatos.js"></script>
+    <!--Javascript de la página presupuesto-->
+    <script src="../js/validar.js"></script>
+</body>
+</html>
